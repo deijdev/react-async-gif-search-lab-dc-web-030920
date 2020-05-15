@@ -26,7 +26,7 @@ class GifListContainer extends Component{
 
     handleSubmit = (event) => {
         event.preventDefault()
-        const input = event.target.children[0].value   ``
+        const input = event.target.children[0].value   
 
         fetch(`https://api.giphy.com/v1/gifs/search?q=${input}&api_key=5rnG20J313UYJ1U83AD92YF9K1hLeyO8`)
         .then(resp => resp.json())
