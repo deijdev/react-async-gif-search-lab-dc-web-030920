@@ -7,16 +7,17 @@ function NavBar(props){
   }
   
   return (
-    <nav className={`navbar ${colors[props.color]}`}>
-      <div className='container-fluid'>
-        <div className='navbar-header'>
-          <a className='navbar-brand'>
-            { props.title }
-          </a>
+      <nav className={`navbar ${colors[props.color]}`}>
+        <div className='container-fluid'>
+          <div className='navbar-header'>
+            <a className='navbar-brand'>
+              { props.title }
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
-  )
+      </nav>
+
+    )
 }
 
 export default NavBar
