@@ -46,12 +46,14 @@ class GifListContainer extends Component{
             <div className='ui container'>
                 <GifSearch handleSubmit={this.handleSubmit}/>
                 <br></br>
-                <GifList gifList={this.state}/>      
-            </div>
-
-        )
-    }
-
+                { (this.state.gifList.length !== 0)  ?
+                 <GifList gifList={this.state}/>      
+                :
+                <p>no gifs matching that search term</p>         
+                }
+            </div> )
+         }
+    
 }
 
 export default GifListContainer
